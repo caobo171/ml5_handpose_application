@@ -7,10 +7,9 @@ const description = new GestureDescription('four');
 
 
 // thumb:
-description.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 0.5);
-description.addCurl(Finger.Thumb, FingerCurl.NoCurl, 0.5);
-description.addDirection(Finger.Thumb, FingerDirection.VerticalUp, 1.0);
-description.addDirection(Finger.Thumb, FingerDirection.DiagonalUpLeft, 1.0);
+description.addCurl(Finger.Thumb, FingerCurl.FullCurl, 1.0);
+description.addDirection(Finger.Thumb, FingerDirection.HorizontalRight, 1.0);
+description.addDirection(Finger.Thumb, FingerDirection.DiagonalUpRight, 1.0);
 
 // index:
 description.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);

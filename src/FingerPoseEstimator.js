@@ -155,6 +155,7 @@ export default class FingerPoseEstimator {
     }
 
     let angleOfCurve = Math.acos(cos_in);
+    console.log(angleOfCurve);
     angleOfCurve = (57.2958 * angleOfCurve) % 180;
 
     let fingerCurl;
