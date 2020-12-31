@@ -57,6 +57,14 @@
       text-align: right;
       padding: 20px 30px 0 0;
     }
+    .loading { 
+      position: absolute;
+      right: 200px;
+      top: 120px;
+      font-weight: 600;
+      font-size: 28px;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -65,6 +73,9 @@
     <video id="pose-video" class="layer" playsinline></video>
     <canvas id="pose-canvas" class="layer"></canvas>
     <div id="pose-result" class="layer"></div>
+  </div>
+  <div class="loading">
+    Loading ...
   </div>
 
   <script>
@@ -104,7 +115,10 @@
         fp.Gestures.ThreeGesture,
         fp.Gestures.DislikeGesture,
         fp.Gestures.FiveGesture,
-        fp.Gestures.FourGesture
+        fp.Gestures.FourGesture,
+        fp.Gestures.RockGesture,
+        fp.Gestures.FuckGesture,
+        fp.Gestures.PunchGesture
       ];
       const GE = new fp.GestureEstimator(knownGestures);
 
@@ -155,6 +169,7 @@
       };
 
       estimateHands();
+      document.querySelector('.loading').innerHTML =  'Loaded';
       console.log("Starting predictions");
     }
 

@@ -5,6 +5,8 @@ import DislikeGesture from './Dislike';
 import FiveGesture from './Five';
 import FourGesture from './Four';
 import FuckGesture from './Fuck';
+import RockGesture from './Rock';
+import PunchGesture from './Punch';
 
 export {
   VictoryGesture,
@@ -13,5 +15,7 @@ export {
   DislikeGesture,
   FiveGesture,
   FourGesture,
-  FuckGesture
+  FuckGesture,
+  RockGesture,
+  PunchGesture
 }
